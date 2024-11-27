@@ -1,0 +1,15 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: noobra
+  password: 12345
+  host: localhost
+
+development:
+  <<: *default
+  database: e_transportation_development
+
+test:
+  <<: *default
+  database: e_transportation_test
